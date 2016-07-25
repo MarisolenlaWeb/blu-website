@@ -1,2 +1,5 @@
 # blu-website
-Landing Page de BLU
+npm install
+bower install
+grunt compile-less
+npm start
