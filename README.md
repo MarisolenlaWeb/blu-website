@@ -1,5 +1,7 @@
 # blu-website
-npm install
+
+```npm install
 bower install
 grunt compile-less
 npm start
+```
