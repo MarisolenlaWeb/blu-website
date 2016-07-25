@@ -1,0 +1,111 @@
+// Custom Navigation Bar
+
+.navbar-default {
+    background-color: @gray-darkest;
+    border-color: transparent;
+    .navbar-brand {
+        img{
+            width: 50%;
+        }
+        // color: @brand-primary;
+        // &:hover,
+        // &:focus,
+        // &:active,
+        // &.active {
+        //     color: darken(@brand-primary, 10%);
+        // }
+    }
+    .navbar-collapse {
+        border-color: fade(white, 2%);
+    }
+    .navbar-toggle {
+        background-color: @brand-primary;
+        border-color: @brand-primary;
+        .icon-bar {
+            background-color: white;
+        }
+        &:hover,
+        &:focus {
+            background-color: @brand-primary;
+        }
+    }
+    .nav {
+        padding-top: 40px;
+        li {
+            a {
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: @color-dark-blue;
+                border-bottom: 3px transparent solid;
+                padding-bottom: 3px;
+                padding-right: 0;
+                padding-left: 0;
+                margin-left: 20px;
+                moz-transition: all .15s;
+                ms-transition: all .15s;
+                o-transition: all .15s;
+                text-decoration: none;
+                transition: all .15s;
+                webkit-transition: all .15s;
+                &:hover,
+                &:focus {
+                    color: @color-white;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .navbar-nav>.active>a {
+        border-radius: 0;
+        border-color: white;
+        color: white;
+        background-color: transparent;
+    }
+    .navbar-nav>.active>a:hover,
+    .navbar-nav>.active>a:focus {
+        color: white;
+        background-color: transparent;
+        // background-color: darken(@brand-primary, 10%);
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        background-color: transparent;
+        padding: 50px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+        .navbar-brand {
+            // font-size: 2em;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .navbar-nav>.active>a {
+            border-radius: 0;
+        }
+    }
+    .navbar-default.navbar-shrink {
+        background-color: @gray-darkest;
+        padding: 10px 0;
+        box-shadow: 0 3px 5px rgba(0,0,0,.15);
+        .navbar-brand {
+            // font-size: 1.5em;
+            width: 50%;
+            padding-top: 6px;
+        }   
+        .nav{
+            padding-top: 0;
+        } 
+    }
+}
+
+@media(max-width:768px) {
+    .navbar-default {
+        .navbar-nav>.active>a {
+            border-color: transparent;
+        }
+    }
+}

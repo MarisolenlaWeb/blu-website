@@ -1,0 +1,96 @@
+extends layout
+
+block content
+    header.bg-principal
+      .container
+        .row
+          .col-md-6
+            h1 AGREGA MÁS VALOR A TU NEGOCIO
+            p
+              | BLU es una plataforma de pago de servicios que ayudará a tu negoco a funcionar como una terminal de cobros para proveer a tus clientes una alternativa cómoda.
+
+            a.btn.btn-default(href='#', type='button') Descarga
+            //- a(href='http://play.google.com/store?utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1')
+            //-     img(alt='Disponible en Google Play', src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png')
+    
+    section#features
+        .container
+            .row
+                .col-md-12
+                    h2 Características
+
+                .col-md-6
+                    h3 ¿Qué puedes hacer con BLU?
+
+                    i.glyphicon.glyphicon-asterisk
+                    h4 Pago de servicios
+                    p No más filas para tus clientes recibe su pago de servicios de una manera rápida, sencilla y en efectivo, brindando un servicio de calidad.
+
+                    h4 Recargas tiempo aire
+                    p No permitas que tus clientes se queden sin saldo, con BLU puedes realizar recargas de cualquier compañía.
+
+                    h4 Fácil, rápido y seguro
+                    p Podrás realizar muchos cobros de servicios desde tu negocio y sus sucursales, mateniendo un entorno seguro y confiable mediante acceso por ususario y contraseña, además de confirmaciones por cada operación realizada.
+
+    section#services
+        .container
+            .row
+                .col-md-12
+                    h2 Servicios
+                    p Conoce los servicios que podrás ofrecer a tus clientes. 
+
+    section#function
+        .container
+            .row
+                .col-md-12
+                    h2 ¿Cómo funciona?
+
+                .col-md-6
+                    p Contáctanos para que comiences a usar BLU en tu negocio.
+                    p Instala la app en cualquier dispositivo Android 4.0
+
+                .col-md-6
+                    p Convierte tu smartphone o tablet en un punto de venta a través de nuestra herramienta web.
+                    p Si tienes más de una sucursal puedes administrar de una manera rápida y sencilla diferentes puntos de venta.          
+
+    section#contact
+        .container
+            .row
+                .col-md-12
+                    h2 Contacto
+
+                .col-md-6
+                    h3 ¡Comienza ya!
+
+                    p Contáctanos por:
+
+                    h4 Teléfono
+                    p +52 55 5555 55
+
+                    h4 Email
+                    p contacto@blu.mx
+
+                    h4 Horario
+                    p Lunes a viernes de 9hrs. a 18hrs.
+
+                .col-md-6
+                    h3 O regístrate
+
+                    p En el siguiente formulario y nosotros nos ponemos en contacto contigo: 
+
+                    form(role='form')
+                        .form-group
+                            label(for='name') Nombre:
+                            input#name.form-control(type='text')  
+                        .form-group
+                            label(for='email') Email:
+                            input#email.form-control(type='email')
+                        .form-group
+                            label(for='phone') Teléfono:
+                            input#phone.form-control(type='number')
+                        .form-group
+                            label(for='message') Mensaje:
+                            textarea#message.form-control(rows='3')
+                        button.btn.btn-default(type='submit') Enviar
+
+
