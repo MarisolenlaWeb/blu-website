@@ -1,49 +1,76 @@
 extends layout
 
 block content
-    header.bg-principal
-      .container
-        .row
-          .col-md-6
-            h1 AGREGA MÁS VALOR A TU NEGOCIO
-            p
-              | BLU es una plataforma de pago de servicios que ayudará a tu negoco a funcionar como una terminal de cobros para proveer a tus clientes una alternativa cómoda.
+    section.bg-principal
+        header.bg-principal-2
+          .container
+            .row
+              .col-md-6
+                h1.title-principal
+                  span.bold-text AGREGA
+                  |  MÁS 
+                  span.bold-text VALOR
+                  |  A TU 
+                  span.bold-text NEGOCIO  
+                p.title-secundary
+                  b BLU 
+                  | es una plataforma de pago de servicios que ayudará a tu negocio a funcionar como una terminal de cobros para proveer a tus clientes una alternativa cómoda.
 
-            a.btn.btn-default(href='#', type='button') Descarga
-            //- a(href='http://play.google.com/store?utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1')
-            //-     img(alt='Disponible en Google Play', src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png')
+                a.btn.btn-primary.btn-lg(href='#', type='button')
+                    i.glyphicon.glyphicon-cloud-download 
+                    | DESCARGAR
+              .col-md-6
+                img.client-img(src='../images/Cliente.png', alt='cliente')  
     
-    section#features
+    
+    section.box
+        section.wrapper
+            section#features.bg-features
+                .container
+                    .row
+                        .col-md-12
+                            h2 CARACTERÍSTICAS
+
+                        .col-md-6.text-center
+                            img.app-blu(src='../images/phone_android_screen1.png', alt='app-BLU') 
+                        
+                        .col-md-6
+                            h3 ¿Qué puedes hacer con BLU?
+
+                        .col-md-6
+                            .col-md-3.text-center
+                                img(src='../images/icons/icon_pagoser.png', alt='icono pago de servicios') 
+                            .col-md-9    
+                                h4 Pago de servicios
+                                p.text-features No más filas para tus clientes, recibe su pago de servicios de una manera rápida, sencilla y en efectivo, brindando un servicio de calidad.
+                        .col-md-6
+                            .col-md-3.text-center
+                                img(src='../images/icons/icon_tiempoaire.png', alt='icono pago de servicios')
+                            .col-md-9
+                                h4 Recargas tiempo aire
+                                p.text-features No permitas que tus clientes se queden sin saldo, con BLU puedes realizar recargas de cualquier compañía.
+                        .col-md-6
+                            .col-md-3.text-center
+                                img(src='../images/icons/icon_seguro.png', alt='icono pago de servicios')
+                            .col-md-9        
+                                h4 Fácil, rápido y seguro
+                                p.text-features Podrás realizar muchos cobros de servicios desde tu negocio y sus sucursales, mateniendo un entorno seguro y confiable mediante acceso por usuario y contraseña, además de confirmaciones por cada operación realizada.
+
+    section#services.pleca-green
+        //- svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='1915px', height='800px', viewbox='0 0 1391 800', enable-background='new 0 0 1391 800', xml:space='preserve')
+        //-     path(fill-rule='evenodd', clip-rule='evenodd', fill='#02FBBD', d='M-2,336L1391,1v420L-1,760L-2,336z')
+
         .container
             .row
                 .col-md-12
-                    h2 Características
-
-                .col-md-6
-                    h3 ¿Qué puedes hacer con BLU?
-
-                    i.glyphicon.glyphicon-asterisk
-                    h4 Pago de servicios
-                    p No más filas para tus clientes recibe su pago de servicios de una manera rápida, sencilla y en efectivo, brindando un servicio de calidad.
-
-                    h4 Recargas tiempo aire
-                    p No permitas que tus clientes se queden sin saldo, con BLU puedes realizar recargas de cualquier compañía.
-
-                    h4 Fácil, rápido y seguro
-                    p Podrás realizar muchos cobros de servicios desde tu negocio y sus sucursales, mateniendo un entorno seguro y confiable mediante acceso por ususario y contraseña, además de confirmaciones por cada operación realizada.
-
-    section#services
-        .container
-            .row
-                .col-md-12
-                    h2 Servicios
+                    h2 SERVICIOS
                     p Conoce los servicios que podrás ofrecer a tus clientes. 
 
     section#function
         .container
             .row
                 .col-md-12
-                    h2 ¿Cómo funciona?
+                    h2 ¿CÓMO FUNCIONA?
 
                 .col-md-6
                     p Contáctanos para que comiences a usar BLU en tu negocio.
@@ -57,7 +84,7 @@ block content
         .container
             .row
                 .col-md-12
-                    h2 Contacto
+                    h2 CONTACTO
 
                 .col-md-6
                     h3 ¡Comienza ya!
