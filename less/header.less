@@ -1,47 +1,69 @@
 // header, section{
-// 	padding: 100px 0; 
+//  padding: 100px 0; 
 // }
 
 /* Background*/
 
 .bg-principal{
-	background-image: url('../images/blu_principal.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+    background-image: url('../images/blu_principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     background-position: top;
-	height: 1236px;
+    height: 1236px;
 }
 
 .bg-principal-2{
-	background-image: url('../images/cubos_principal.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 1236px;
+    background-image: url('../images/cubos_principal.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1236px;
 }
 
 .client-img{
-	padding-top: 18em;
+    padding-top: 18em;
     margin-left: -10em; 
 }
 
 .title-principal{
-	padding-top: 5.5em;
-	padding-bottom: 15px;
-	font-size: 5.3em;
-	line-height: 0.9em;
-	color: @color-white;
-	margin-right: -2em;
+    padding-top: 5.5em;
+    padding-bottom: 15px;
+    font-size: 5.3em;
+    line-height: 0.9em;
+    color: @color-white;
+    margin-right: -2em;
 }
 
 .bold-text{
-	font-family: myriadProBold;
+    font-family: myriadProBold;
 }
 
 .title-secundary{
-	color: @color-white;
-	font-size: 2em;
-	font-weight: lighter;
-	line-height: 1.2em;
+    color: @color-white;
+    font-size: 2em;
+    font-weight: lighter;
+    line-height: 1.2em;
 }
 
+@media (max-width: 1290px) {
+    .client-img{
+        padding-top: 20em;
+        margin-left: -15em; 
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar>.container .navbar-brand{
+        margin-left: -7em;
+    }
+    .navbar-right {
+        margin-right: -5.5em;
+    }   
+    .title-principal{
+        padding-top: 5em;
+    }
+    // .client-img{
+    //  padding-top: 25em;
+ //     margin-left: -15em; 
+    // }
+}

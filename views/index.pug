@@ -38,86 +38,155 @@ block content
                             h3 ¿Qué puedes hacer con BLU?
 
                         .col-md-6
-                            .col-md-3.text-center
-                                img(src='../images/icons/icon_pagoser.png', alt='icono pago de servicios') 
-                            .col-md-9    
-                                h4 Pago de servicios
-                                p.text-features No más filas para tus clientes, recibe su pago de servicios de una manera rápida, sencilla y en efectivo, brindando un servicio de calidad.
-                        .col-md-6
-                            .col-md-3.text-center
-                                img(src='../images/icons/icon_tiempoaire.png', alt='icono pago de servicios')
-                            .col-md-9
-                                h4 Recargas tiempo aire
-                                p.text-features No permitas que tus clientes se queden sin saldo, con BLU puedes realizar recargas de cualquier compañía.
-                        .col-md-6
-                            .col-md-3.text-center
-                                img(src='../images/icons/icon_seguro.png', alt='icono pago de servicios')
-                            .col-md-9        
-                                h4 Fácil, rápido y seguro
-                                p.text-features Podrás realizar muchos cobros de servicios desde tu negocio y sus sucursales, mateniendo un entorno seguro y confiable mediante acceso por usuario y contraseña, además de confirmaciones por cada operación realizada.
+                            ul.media-list
+                                li.media
+                                    .media-left.text-center
+                                        img.media-object(src='../images/icons/icon-pago.png', alt='icono pago de servicios')
+                                    .media-body
+                                        h4 Pago de servicios
+                                        p.text-features No más filas para tus clientes, recibe su pago de servicios de una manera rápida, sencilla y en efectivo, brindando un servicio de calidad.
 
-    section#services.pleca-green
-        //- svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='1915px', height='800px', viewbox='0 0 1391 800', enable-background='new 0 0 1391 800', xml:space='preserve')
-        //-     path(fill-rule='evenodd', clip-rule='evenodd', fill='#02FBBD', d='M-2,336L1391,1v420L-1,760L-2,336z')
+                                li.media
+                                    .media-left.text-center
+                                        img.media-object(src='../images/icons/icon-tiempoaire.png', alt='icono pago de servicios')
+                                    .media-body
+                                        h4 Recargas tiempo aire
+                                        p.text-features No permitas que tus clientes se queden sin saldo, con BLU puedes realizar recargas de cualquier compañía.
 
+                                li.media
+                                    .media-left.text-center
+                                        img.media-object(src='../images/icons/icon-seguro.png', alt='icono pago de servicios')
+                                    .media-body
+                                        h4 Fácil, rápido y seguro
+                                        p.text-features Podrás realizar muchos cobros de servicios desde tu negocio y sus sucursales, mateniendo un entorno seguro y confiable mediante acceso por usuario y contraseña, además de confirmaciones por cada operación realizada.
+                              
+
+    section
+        img.pleca-green(src='../images/Pleca_verde.png', alt='pleca-verde')
+
+    section#services.bg-services
         .container
             .row
                 .col-md-12
-                    h2 SERVICIOS
-                    p Conoce los servicios que podrás ofrecer a tus clientes. 
+                    h2.font-blue SERVICIOS
+                    p.subtitle Conoce los servicios que podrás ofrecer a tus clientes. 
 
-    section#function
+        .container   
+            .row
+                .col-md-3.col-sm-4.col-xs-6
+                    img.logos-services(src='../images/logos/logo_luz.png', alt='logo cfe')
+                .col-md-3.col-sm-4.col-xs-6
+                    img.logos-services(src='../images/logos/logo_telmex.png', alt='logo telmex')
+                .col-md-3.col-sm-4.col-xs-6
+                    img.logos-services(src='../images/logos/logo_infonavit.png', alt='logo infonavit')
+                .col-md-3.col-sm-4.col-xs-6
+                    img.logos-services(src='../images/logos/logo_movistar.png', alt='logo movistar')
+                .col-md-3.col-sm-4.col-xs-6
+                    img.logos-services(src='../images/logos/logo_dish.png', alt='logo dish')
+                .col-md-3.col-sm-4.col-xs-6
+                    img.logos-services(src='../images/logos/logo_gas.png', alt='logo gas natural')
+                .col-md-3.col-sm-4.col-xs-6
+                    img.logos-services(src='../images/logos/logo_maxcom.png', alt='logo maxcom')
+                .col-md-3.col-sm-4.col-xs-6
+                    img.logos-services(src='../images/logos/logo_sky.png', alt='logo sky')     
+
+    section
+        img.pleca-green(src='../images/Pleca_blue.png', alt='pleca-azul')
+
+    section#function.bg-function
         .container
             .row
                 .col-md-12
                     h2 ¿CÓMO FUNCIONA?
 
                 .col-md-6
-                    p Contáctanos para que comiences a usar BLU en tu negocio.
-                    p Instala la app en cualquier dispositivo Android 4.0
+                    .media.pb-5
+                        .media-left
+                            img.media-object(src='../images/icons/icon-contacto.png', alt='ícono contacto')
+                        .media-body
+                          p.text-function
+                            span.bold-text Contáctanos
+                            |  para que comiences a usar BLU en tu negocio.
 
                 .col-md-6
-                    p Convierte tu smartphone o tablet en un punto de venta a través de nuestra herramienta web.
-                    p Si tienes más de una sucursal puedes administrar de una manera rápida y sencilla diferentes puntos de venta.          
+                    .media.pb-5
+                        .media-left
+                            img.media-object(src='../images/icons/icon-smart.png', alt='ícono convierte')
+                        .media-body
+                          p.text-function 
+                            span.bold-text Convierte 
+                            | tu smartphone o tablet en un punto de venta a través de nuestra herramienta web.
 
-    section#contact
+                .col-md-6
+                    .media.pb-5
+                        .media-left
+                            img.media-object(src='../images/icons/icon-android.png', alt='ícono android')
+                        .media-body
+                          p.text-function 
+                            span.bold-text Instala 
+                            | la app en cualquier dispositivo Android 4.0
+
+                .col-md-6
+                    .media.pb-5
+                        .media-left
+                            img.media-object(src='../images/icons/icon-administra.png', alt='ícono administra')
+                        .media-body
+                          p.text-function 
+                            span.bold-text Administra 
+                            | más de una sucursal de una manera rápida y sencilla con sus diferentes puntos de venta.
+            
+            .row
+                .col-md-6.text-center 
+                    img.phone-app.img-responsive(src='../images/phone.png', alt='teléfono')
+                .col-md-6.text-center        
+                    img.tablet-app.img-responsive(src='../images/ipad.png', alt='tablet')       
+                     
+    section
+        img.pleca-green(src='../images/Pleca_gray.png', alt='pleca-azul')
+
+    section#contact.bg-contact
         .container
             .row
                 .col-md-12
-                    h2 CONTACTO
+                    h2.font-blue CONTACTO
 
                 .col-md-6
                     h3 ¡Comienza ya!
 
-                    p Contáctanos por:
+                    p.text-contact Contáctanos por:
 
                     h4 Teléfono
-                    p +52 55 5555 55
+                    p.text-contact +52 55 5555 55
 
                     h4 Email
-                    p contacto@blu.mx
+                    p.text-contact contacto@blu.mx
 
                     h4 Horario
-                    p Lunes a viernes de 9hrs. a 18hrs.
+                    p.text-contact Lunes a viernes de 9hrs. a 18hrs.
 
                 .col-md-6
                     h3 O regístrate
 
-                    p En el siguiente formulario y nosotros nos ponemos en contacto contigo: 
+                    p.text-contact En el siguiente formulario y nosotros nos ponemos en contacto contigo: 
 
                     form(role='form')
                         .form-group
-                            label(for='name') Nombre:
-                            input#name.form-control(type='text')  
+                            //- label(for='name') Nombre:
+                            input#name.form-control(type='text' placeholder='Nombre *' required)  
                         .form-group
-                            label(for='email') Email:
-                            input#email.form-control(type='email')
+                            //- label(for='email') Email:
+                            input#email.form-control(type='email' placeholder='Email *' required)
                         .form-group
-                            label(for='phone') Teléfono:
-                            input#phone.form-control(type='number')
+                            //- label(for='phone') Teléfono:
+                            input#phone.form-control(type='number' placeholder='Teléfono')
                         .form-group
-                            label(for='message') Mensaje:
-                            textarea#message.form-control(rows='3')
-                        button.btn.btn-default(type='submit') Enviar
+                            //- label(for='message') Mensaje:
+                            textarea#message.form-control(rows='8' placeholder='Mensaje')
+                        a.btn.btn-primary.btn-lg(href='#', type='button')
+                            i.glyphicon.glyphicon-share-alt 
+                            | ENVIAR
+
+                .col-md-12.text-center
+                    img.logo-blu(src='../images/logo_blu.png', alt='logo BLU')
 
 
