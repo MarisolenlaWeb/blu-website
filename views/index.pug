@@ -139,11 +139,7 @@ block content
             
             .row
                 .col-md-12.text-center
-                    img.img-responsive.mobile-app(src='../images/phone-tablet.png', alt='app móvil')
-                //- .col-md-6.text-center 
-                //-     img.phone-app.img-responsive(src='../images/phone.png', alt='teléfono')
-                //- .col-md-6.text-center        
-                //-     img.tablet-app.img-responsive(src='../images/ipad.png', alt='tablet')       
+                    img.img-responsive.mobile-app(src='../images/phone-tablet.png', alt='app móvil')      
                      
     section
         img.pleca-green(src='../images/Pleca_gray.png', alt='pleca-azul')
@@ -173,20 +169,20 @@ block content
 
                     p.text-contact En el siguiente formulario y nosotros nos ponemos en contacto contigo: 
 
-                    form(role='form')
+                    form(role='form', method='POST', action='/mail/sendMail')
                         .form-group
                             //- label(for='name') Nombre:
-                            input#name.form-control(type='text' placeholder='Nombre *' required)  
+                            input#name.form-control(name='name' type='text' placeholder='Nombre *' required)  
                         .form-group
                             //- label(for='email') Email:
-                            input#email.form-control(type='email' placeholder='Email *' required)
+                            input#email.form-control(name='email' type='email' placeholder='Email *' required)
                         .form-group
                             //- label(for='phone') Teléfono:
-                            input#phone.form-control(type='number' placeholder='Teléfono')
+                            input#phone.form-control(name='phone' type='number' placeholder='Teléfono')
                         .form-group
                             //- label(for='message') Mensaje:
-                            textarea#message.form-control(rows='8' placeholder='Mensaje')
-                        a.btn.btn-primary.btn-lg(href='#', type='button')
+                            textarea#message.form-control(name='message' rows='8' placeholder='Mensaje')
+                        button.btn.btn-primary.btn-lg(name='submit' type='submit' value='Enviar')
                             i.glyphicon.glyphicon-share-alt 
                             | ENVIAR
 
