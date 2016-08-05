@@ -24,7 +24,7 @@ var html = '<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE html
 
 
 if(mailjet.sendContent('contacto@conecta.co',
-         [req.body.email, 'bcc:marisol.carrillo@conecta.co'],
+         [req.body.email, 'bcc:octavio.martinez@conecta.co'],
          'Contacto Conecta Soluciones Tecnológicas',
          'html',
          html)){
