@@ -21,36 +21,91 @@ $('.navbar-collapse ul li a').click(function() {
 
 
 // Mail
-$(function sendMail(){
-  $.ajax({
-    url: '/mail/sendMail',
-    data: {
-        nombre: $("#name").val(),
-        email: $("#email").val(),
-        telefono: $("#phone").val(),
-        message: $("#message").val()
-    },
-    type: 'POST',
-    datatype: JSON,
-    crossDomain: false,
-    success: function(respuesta){
-      console.log(respuesta);
+// $(function sendMail(){
+//   $.ajax({
+//     url: '/mail/sendMail',
+//     data: {
+//         nombre: $("#name").val(),
+//         email: $("#email").val(),
+//         telefono: $("#phone").val(),
+//         message: $("#message").val()
+//     },
+//     type: 'POST',
+//     datatype: JSON,
+//     crossDomain: false,
+//     success: function(respuesta){
+//       console.log(respuesta);
 
-    },
-    error: function(respuesta){
+//     },
+//     error: function(respuesta){
 
-    }
-  });
-});
-
-// $( "form" ).submit(function( event ) {
-
-//   console.log("send");
-//   event.preventDefault();
+//     }
+//   });
 // });
 
 
-// $("#submit-contact").click(function(){
-//         alert("hola");
-//   sendMail();
-// });
+// Plecas
+
+// Init ScrollMagic Controller
+var controller = new ScrollMagic.Controller();
+
+
+var pleca_green = new ScrollMagic.Scene({
+    triggerHook: 'onEnter',
+    triggerElement: '.pleca-green .pleca',
+    duration: '150%'
+})
+        .addTo(controller)
+        .setTween('.pleca-green .pleca img', {y: '-70%', ease: Linear.easeNone});
+
+var pleca_blue = new ScrollMagic.Scene({
+    triggerHook: 'onEnter',
+    triggerElement: '.pleca-blue .pleca',
+    duration: '150%'
+})
+        .addTo(controller)
+        .setTween('.pleca-blue .pleca img', {y: '-70%', ease: Linear.easeNone});
+
+var pelca_gray = new ScrollMagic.Scene({
+    triggerHook: 'onEnter',
+    triggerElement: '.pleca-gray .pleca',
+    duration: '150%'
+})
+        .addTo(controller)
+        .setTween('.pleca-gray .pleca img', {y: '-70%', ease: Linear.easeNone});
+
+// Backgrounds sections
+
+var features_bg = new ScrollMagic.Scene({
+    triggerHook: 'onEnter',
+    triggerElement: '#features .bg-features',
+    duration: '500%'
+})
+        .addTo(controller)
+        .setTween('#features .bg-features', {y: '-70%', ease: Linear.easeNone});
+
+var services_bg = new ScrollMagic.Scene({
+    triggerHook: 'onEnter',
+    triggerElement: '#services .bg-services',
+    duration: '500%'
+})
+        .addTo(controller)
+        .setTween('#services .bg-services', {y: '-70%', ease: Linear.easeNone});
+
+var function_bg = new ScrollMagic.Scene({
+    triggerHook: 'onEnter',
+    triggerElement: '#function .bg-function',
+    duration: '500%'
+})
+        .addTo(controller)
+        .setTween('#function .bg-function', {y: '-70%', ease: Linear.easeNone});
+
+var contact_bg = new ScrollMagic.Scene({
+    triggerHook: 'onEnter',
+    triggerElement: '#contact .bg-contact',
+    duration: '500%'
+})
+        .addTo(controller)
+        .setTween('#contact .bg-contact', {y: '-70%', ease: Linear.easeNone});
+
+

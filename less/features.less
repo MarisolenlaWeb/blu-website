@@ -1,7 +1,7 @@
 .box {
   background-color: @color-white;
   margin-top: -12em;
-  margin-bottom: 9.2em;
+  margin-bottom: 20em;
   padding-top: 15em;
   -webkit-transform: skewY(-13deg);
   -moz-transform: skewY(-13deg);
@@ -16,24 +16,17 @@
   -ms-transform: skewY(13deg);
   -o-transform: skewY(13deg);
   transform: skewY(13deg);
-}
-
-.pleca-green{
-  // background-image: url('../images/Pleca_verde.svg');
-  // background-repeat: no-repeat;
-  // background-size: 100%;
-  // background-position: 0 -10em;
-  // height: 1000px;
-  width: 100%;
-}
+}  
 
 .bg-features{
-  background-image: url('../images/cubos_caracteristicas.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 5em;
-  height: 1310px;
-  margin-bottom: -12em;
+  // background-image: url('../images/cubos_caracteristicas.png');
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+  // background-position: 0 5em;
+  // height: 1310px;
+  // margin-bottom: -12em;
+  width: 100%;
+  position: absolute;
 }
 
 #features{ 
@@ -52,7 +45,7 @@
 
 @media (max-width: 991px) {   
   .box {
-      margin-bottom: 60em;
+      margin-bottom: 10em;
   }
 }
 
@@ -60,4 +53,10 @@
   .media-object{
     display: none;
   }
+}
+
+@media (min-width: 1441px){
+    .box {
+      margin-top: -14em;
+    }
 }
