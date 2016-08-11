@@ -20,29 +20,8 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 
-// Mail
-// $(function sendMail(){
-//   $.ajax({
-//     url: '/mail/sendMail',
-//     data: {
-//         nombre: $("#name").val(),
-//         email: $("#email").val(),
-//         telefono: $("#phone").val(),
-//         message: $("#message").val()
-//     },
-//     type: 'POST',
-//     datatype: JSON,
-//     crossDomain: false,
-//     success: function(respuesta){
-//       console.log(respuesta);
 
-//     },
-//     error: function(respuesta){
-
-//     }
-//   });
-// });
-
+// ScrollMagic Plugin
 
 // Plecas
 
@@ -73,6 +52,7 @@ var pelca_gray = new ScrollMagic.Scene({
 })
         .addTo(controller)
         .setTween('.pleca-gray .pleca img', {y: '-70%', ease: Linear.easeNone});
+
 
 // Backgrounds sections
 
