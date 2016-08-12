@@ -20,7 +20,6 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 
-
 // ScrollMagic Plugin
 
 // Plecas
@@ -52,7 +51,6 @@ var pelca_gray = new ScrollMagic.Scene({
 })
         .addTo(controller)
         .setTween('.pleca-gray .pleca img', {y: '-70%', ease: Linear.easeNone});
-
 
 // Backgrounds sections
 
