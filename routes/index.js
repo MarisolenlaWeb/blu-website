@@ -17,19 +17,49 @@ var request = require('superagent');
 var title = "BLU";
 
 router.get('/', function(req, res, next) {
-  // res.render('index', { title: title });
+  res.render('index', { title: title });
+
+});
+
+
+router.get('/test', function(req, res, next) {
+  res.render('test');
+
+});
+
+
+
+
+
+router.post('/revisarcomprobante', function(req, res, next) {
+        console.log("VARIABLES");
+
+        console.log(req.body);
+
+
 
   request
 	  .post('http://162.243.30.11:8080/pro/Blu/api/consulta/pago')
 	  .type('form')
-	  .send({ 'fecha: ' + request.params.fecha, 'autorizacion: ' + request.params.autorizacion })
+	  .send(req.body)
 	  .set('Accept', 'application/json')
-	  .end(function(err, res){
-	  	console.log(err);
-	  	console.log(res.body);
+	  .end(function(err, cosulta){
+                  if(err){
+                          console.log(err);
+                          res.send('<p>Error</p>');
+                  }
+                  console.log(cosulta.body);
+
+                  var datos = cosulta.body;
+
+
+                  res.render('comprobante', datos);
+
 	    // Calling the end function will send the request
   	});
 });
+
+
 
 
 module.exports = router;
