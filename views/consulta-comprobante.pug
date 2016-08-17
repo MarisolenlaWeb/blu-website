@@ -1,0 +1,25 @@
+extends layout2
+
+block content
+
+    section
+          .container
+            .row
+              .col-md-12
+                //- form(method="POST", action="/informacion-comprobante")
+                //-     input(type="text" name="fecha")
+                //-     input(type="text" name="autorizacion")
+                //-     input(type="submit" value="confirmar")
+
+                h1 Consulta tu comprobante
+
+                form(role='form', method='POST', action='/informacion-comprobante')
+                    .form-group
+                        label(for='date') Ingresa la fecha:
+                        input#date.form-control(name='fecha' type='text' placeholder='dd-mm-aaaa')  
+                    .form-group
+                        label(for='autorization') Ingresa el número de autorización:
+                        input#autorization.form-control(name='autorizacion' type='number' placeholder='0000')
+                    button.btn.btn-primary.btn-lg.btn-100(name='submit' type='submit' value='confirmar')
+                        i.glyphicon.glyphicon-ok 
+                        | CONFIRMAR

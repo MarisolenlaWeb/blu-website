@@ -23,6 +23,19 @@
 	color: @color-white;
 }
 
+.back-to-top {
+	display: none;
+	padding: 10px 5px 10px 15px;
+	border-radius: 100%;
+	font-size: 20px;
+	color: #fff;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1;
+	box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
 @media(max-width:991px) {
   .btn-100{
 	    width: 100%;
@@ -33,4 +46,11 @@
   .btn-lg{
 	    padding: 15px 20px;
 	}  
+}
+
+@media(max-width:768px) {
+    .back-to-top {
+		padding: 8px 0px 8px 10px;
+		font-size: 10px;
+	}
 }

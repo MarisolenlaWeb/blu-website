@@ -22,16 +22,16 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/test', function(req, res, next) {
-  res.render('test');
+/* GET consulta. */
+
+router.get('/consulta-comprobante', function(req, res, next) {
+  res.render('consulta-comprobante');
 
 });
 
 
 
-
-
-router.post('/revisarcomprobante', function(req, res, next) {
+router.post('/informacion-comprobante', function(req, res, next) {
         console.log("VARIABLES");
 
         console.log(req.body);
@@ -43,14 +43,14 @@ router.post('/revisarcomprobante', function(req, res, next) {
 	  .type('form')
 	  .send(req.body)
 	  .set('Accept', 'application/json')
-	  .end(function(err, cosulta){
+	  .end(function(err, consulta){
                   if(err){
                           console.log(err);
                           res.send('<p>Error</p>');
                   }
-                  console.log(cosulta.body);
+                  console.log(consulta.body);
 
-                  var datos = cosulta.body;
+                  var datos = consulta.body;
 
 
                   res.render('comprobante', datos);

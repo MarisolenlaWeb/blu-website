@@ -19,6 +19,27 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+// Back to top button
+
+$(document).ready(function(){
+ 
+    $('.back-to-top').click(function(){
+        $('body, html').animate({
+            scrollTop: '0px'
+        }, 300);
+    });
+ 
+    $(window).scroll(function(){
+        if( $(this).scrollTop() > 0 ){
+            $('.back-to-top').fadeIn(400);
+        } else {
+            $('.back-to-top').fadeOut(400);
+        }
+    });
+ 
+});
+
+
 
 // ScrollMagic Plugin
 
@@ -85,5 +106,12 @@ var contact_bg = new ScrollMagic.Scene({
 })
         .addTo(controller)
         .setTween('#contact .bg-contact', {y: '-70%', ease: Linear.easeNone});
+
+
+// Close window
+
+function close(){ 
+window.close() 
+} 
 
 

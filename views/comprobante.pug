@@ -1,11 +1,39 @@
-html
-        body
-                h1 comprobante
+extends layout2
 
-                if codigo == 2
-                        label comprobante incorrecto
-                else
-                        label autorización:
-                        label=data.autorizacion
-                        br
-                        label fecha de Captura: #{data.fechaCaptura} esta es la fecha
+block content
+
+    section
+      .container
+        .row
+          .col-md-12
+            h1 Comprobante
+
+            if codigo == 2
+                label comprobante incorrecto
+                br
+                a.btn.btn-primary.btn-lg.btn-100(href='/consulta-comprobante', type='button')
+                    i.glyphicon.glyphicon-arrow-left 
+                    | Regresar
+            else
+                //- label autorización:
+                //- label=data.autorizacion
+                label Número de autorización: #{data.autorizacion}
+                br
+                label Fecha de Captura: #{data.fechaCaptura} esta es la fecha
+                br
+                label Folio: #{data.folio}
+                br
+                label Servicio: #{data.servicio}
+                br
+                label Referencia: #{data.referencia}
+                br
+                label Monto: #{data.monto}
+                br
+                label Estatus: #{data.respuesta}
+                br
+                label Leyenda: #{data.leyenda}
+                br
+                a.btn.btn-primary.btn-lg.btn-100(href='/consulta-comprobante', type='button')
+                    i.glyphicon.glyphicon-arrow-left 
+                    | Realizar otra consulta
+                
