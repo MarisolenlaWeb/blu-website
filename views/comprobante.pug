@@ -5,35 +5,69 @@ block content
     section
       .container
         .row
-          .col-md-12
-            h1 Comprobante
+          .col-md-offset-2.col-md-8
 
-            if codigo == 2
-                label comprobante incorrecto
-                br
-                a.btn.btn-primary.btn-lg.btn-100(href='/consulta-comprobante', type='button')
-                    i.glyphicon.glyphicon-arrow-left 
-                    | Regresar
-            else
-                //- label autorización:
-                //- label=data.autorizacion
-                label Número de autorización: #{data.autorizacion}
-                br
-                label Fecha de Captura: #{data.fechaCaptura} esta es la fecha
-                br
-                label Folio: #{data.folio}
-                br
-                label Servicio: #{data.servicio}
-                br
-                label Referencia: #{data.referencia}
-                br
-                label Monto: #{data.monto}
-                br
-                label Estatus: #{data.respuesta}
-                br
-                label Leyenda: #{data.leyenda}
-                br
-                a.btn.btn-primary.btn-lg.btn-100(href='/consulta-comprobante', type='button')
-                    i.glyphicon.glyphicon-arrow-left 
-                    | Realizar otra consulta
-                
+            .users-content
+                h1.title-users DETALLE DE TU COMPROBANTE
+
+                .ticket-content
+                    if codigo == 2
+                        .row
+                            .col-md-12.text-center
+                                label.ticket-error El comprobante no existe, intenta de nuevo.
+                        .row
+                            .col-md-offset-1.col-md-10
+                                a.btn.btn-primary.btn-lg.btn-users-100.btn-responsive(href='/consulta-comprobante', type='button')
+                                    i.glyphicon.glyphicon-circle-arrow-left 
+                                    | REALIZAR OTRA CONSULTA
+                        br       
+                        
+                    else
+                        .row
+                            .col-md-4
+                                label No. de autorización: 
+                            .col-md-8
+                                span.response #{data.autorizacion}
+                        .row
+                            .col-md-4
+                                label Fecha de Captura: 
+                            .col-md-8
+                                span.response #{data.fechaCaptura}
+                        .row
+                            .col-md-4
+                                label Folio: 
+                            .col-md-8   
+                                span.response #{data.folio}
+                        .row
+                            .col-md-4
+                                label Servicio: 
+                            .col-md-8
+                                span.response #{data.servicio}
+                        .row
+                            .col-md-4
+                                label Referencia: 
+                            .col-md-8
+                                span.response #{data.referencia}
+                        .row
+                            .col-md-4
+                                label Monto: 
+                            .col-md-8
+                                span.response $#{data.monto}
+                        .row
+                            .col-md-4
+                                label Estatus: 
+                            .col-md-8
+                                span.response #{data.respuesta}
+                        br
+                        br
+                        .row
+                            .col-md-12.text-center
+                                span.response #{data.leyenda}
+                        .row
+                            .col-md-offset-1.col-md-10
+                                a.btn.btn-primary.btn-lg.btn-users-100.btn-responsive(href='/consulta-comprobante', type='button')
+                                    i.glyphicon.glyphicon-circle-arrow-left
+                                    | REALIZAR OTRA CONSULTA
+                        br
+                            
+                            

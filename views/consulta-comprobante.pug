@@ -5,21 +5,20 @@ block content
     section
           .container
             .row
-              .col-md-12
-                //- form(method="POST", action="/informacion-comprobante")
-                //-     input(type="text" name="fecha")
-                //-     input(type="text" name="autorizacion")
-                //-     input(type="submit" value="confirmar")
+              .col-md-offset-2.col-md-8
 
-                h1 Consulta tu comprobante
+                div.users-content
+                    h1.title-users CONSULTA TU COMPROBANTE
+                    p.subtitle-users Para ver el detalle de tus pagos ingresa los siguientes datos:
 
-                form(role='form', method='POST', action='/informacion-comprobante')
-                    .form-group
-                        label(for='date') Ingresa la fecha:
-                        input#date.form-control(name='fecha' type='text' placeholder='dd-mm-aaaa')  
-                    .form-group
-                        label(for='autorization') Ingresa el número de autorización:
-                        input#autorization.form-control(name='autorizacion' type='number' placeholder='0000')
-                    button.btn.btn-primary.btn-lg.btn-100(name='submit' type='submit' value='confirmar')
-                        i.glyphicon.glyphicon-ok 
-                        | CONFIRMAR
+                    form.form-users(role='form', method='POST', action='/informacion-comprobante')
+                        .form-group
+                            label(for='date') Fecha:
+                            input#date.form-control.form-inputs(name='fecha' type='text' placeholder='dd-mm-aaaa')  
+                        .form-group
+                            label(for='autorization') Número de autorización:
+                            input#autorization.form-control.form-inputs(name='autorizacion' type='number' placeholder='0000')
+                        button.btn.btn-primary.btn-lg.btn-users-100.btn-responsive(name='submit' type='submit' value='confirmar')
+                            i.glyphicon.glyphicon-ok-sign 
+                            | CONFIRMAR COMPROBANTE
+    br

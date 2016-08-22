@@ -1,16 +1,101 @@
-.glyphicon-ok{
+.glyphicon-ok-sign{
 	top: 4px;
 }
 
-.glyphicon-arrow-left{
-	top: 7px;
+.glyphicon-circle-arrow-left{
+	top: 5px;
 } 
 
 .form-users{
 	font-family: myriadProSemibold;
 	font-size: 1.2em;
-	border: 2px solid #dadcdd;
 	border-radius: 6px;
-	padding-top: 1em;
+	padding: 3em 2em;
+	background-color: @light-gray;
+}
+
+.form-inputs{
+    font-family: myriadProSemibold;
+    border: 2px solid #dadcdd;
+    border-radius: 6px;
+    padding: 2em 1em;
+}
+
+.title-users, .subtitle-users{
+	color: @color-white;
+	text-align: center;
+}
+.title-users{
+	font-family: myriadProSemibold;
+	font-size: 3em;
+	padding-bottom: 0.3em;
+}
+
+.subtitle-users{
+	font-size: 1.7em;
 	padding-bottom: 1em;
+}
+
+
+.bg-users{
+	background-color: @color-blue;
+	position: relative;
+	width: 100%;
+	height: auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url('../images/PAGE_COMPROBANTE.png');
+}
+
+.users-content {
+	padding-top: 7em;
+	padding-bottom: 7em;
+}
+
+.btn-users-100{
+    width: 100%;
+} 
+
+.ticket-content{
+	border-radius: 6px;
+	padding: 2em 4em;
+	background-color: #feffff;
+
+	label{
+		font-size: 1.4em;
+	}
+
+	.response{
+		font-size: 1.4em;
+		color: @color-dark-blue;
+	}
+}
+
+.ticket-error{
+	font-family: myriadProSemibold;
+	font-size: 2.1em !important;
+	padding: 3em 4em 2em;
+}
+
+
+@media(max-width:556px) {
+ 	.ticket-error{
+		padding: 3em 0 2em;
+	}  
+}
+
+@media(max-width:317px) {
+ 	.title-users{
+		font-size: 2em;
+	} 
+	.ticket-error{
+		font-size: 1.5em !important;
+	}
+	.btn-lg{
+		font-size: 15px;
+	} 
 }
