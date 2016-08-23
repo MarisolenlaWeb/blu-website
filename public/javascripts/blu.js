@@ -109,9 +109,10 @@ var contact_bg = new ScrollMagic.Scene({
 
 
 // Close window
-
-function close(){ 
-window.close() 
+ 
+function cerrar() { 
+    ventana=window.self; 
+    ventana.opener=window.self; 
+    ventana.close(); 
 } 
-
 
