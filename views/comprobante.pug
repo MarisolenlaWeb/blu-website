@@ -11,8 +11,11 @@ block content
                 h1.title-users DETALLE DE TU COMPROBANTE
 
                 .ticket-content
-                    a.close(href='#', onclick='cerrar()') ×
+                    
                     if codigo == 2
+                        .row
+                            .col-md-12
+                                a.close(href='#', onclick='cerrar()') ×
                         .row
                             .col-md-12.text-center
                                 label.ticket-error El comprobante no existe, intenta de nuevo.
@@ -24,6 +27,9 @@ block content
                         br       
                         
                     else
+                        .row
+                            .col-md-12
+                                a.close(href='#', onclick='cerrar()') ×
                         .row
                             .col-md-4
                                 label No. de autorización: 
